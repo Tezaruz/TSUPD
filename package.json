@@ -1,0 +1,8 @@
+{
+  "name": "TSUPD",
+  "version": "0.0.1",
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "webpack": "^1.12.11"
+  }
+}
