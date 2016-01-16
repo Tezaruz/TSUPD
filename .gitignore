@@ -1,0 +1,5 @@
+/node_modules
+/projectFilesBackup
+/app/bundle.js
+/.idea
+# Created by .gitignore support plugin (hsz.mobi)
