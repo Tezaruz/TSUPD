@@ -3,6 +3,7 @@
  */
 
 var angular = require('angular');
-var ngModule = angular.module('app',[]);
+var ngModule = angular.module('app',['inputFormsCntrls']);
 
 require('./directives')(ngModule);
+require('./controllers')(ngModule);
