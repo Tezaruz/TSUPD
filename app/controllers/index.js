@@ -5,4 +5,5 @@
 module.exports = function(ngModule){
 
     require('./input-forms/mainCtrl.js')(ngModule);
-}
+
+};

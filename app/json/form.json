@@ -1,0 +1,59 @@
+{
+  "formName": "formName",
+  "fields":[
+    {
+      "key": "myList",
+      "type": "ui-grid",
+      "templateOptions": {
+        "label": "I. Заголовок",
+        "columnDefs": [
+          {
+            "name": "State",
+            "field": "name"
+          },
+          {
+            "name": "Abbr",
+            "field": "abbr"
+          }
+        ],
+        "onRegisterApi": ""
+      },
+      "controller": "formState.uiGridCtrl"
+    }
+  ],
+  "myList": [
+    {
+      "name": "Alabama",
+      "abbr": "AL"
+    },
+    {
+      "name": "Alaska",
+      "abbr": "AK"
+    },
+    {
+      "name": "American Samoa",
+      "abbr": "AS"
+    },
+    {
+      "name": "Arizona",
+      "abbr": "AZ"
+    },
+    {
+      "name": "Arkansas",
+      "abbr": "AR"
+    },
+    {
+      "name": "California",
+      "abbr": "CA"
+    },
+    {
+      "name": "Colorado",
+      "abbr": "CO"
+    },
+    {
+      "name": "Connecticut",
+      "abbr": "CT"
+    }
+  ]
+
+}

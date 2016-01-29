@@ -3,16 +3,14 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Dgigurda</title>
-    <script src="app/bundle.js"></script>
+    <script src="prod/bundle.js"></script>
 </head>
-<body ng-controller="mainCntrl">
-<h1>TSUPD</h1>
-{{vm.val}}
-<form ng-submit="vm.onSubmit()" name="vm.form" novalidate>
-    <formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">
-        <button type="submit" class="btn btn-primary submit-button" ng-disabled="vm.form.$invalid">Submit</button>
-        <button type="button" class="btn btn-default" ng-click="vm.options.resetModel()">Reset</button>
-    </formly-form>
-</form>
+<body ng-controller="mainCntrl as vm">
+    <h1>{{vm.name}}</h1>
+    <form ng-submit="vm.onSubmit()" name="vm.form" novalidate>
+        <formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">
+            <button type="submit" ng-click="vm.onSubmit()" class="btn btn-primary submit-button">Submit</button>
+        </formly-form>
+    </form>
 </body>
 </html>
