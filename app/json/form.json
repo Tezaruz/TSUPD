@@ -13,7 +13,8 @@
           },
           {
             "name": "Abbr",
-            "field": "abbr"
+            "field": "abbr",
+            "type": "number"
           }
         ],
         "onRegisterApi": ""
@@ -24,35 +25,35 @@
   "myList": [
     {
       "name": "Alabama",
-      "abbr": "AL"
+      "abbr": 1
     },
     {
       "name": "Alaska",
-      "abbr": "AK"
+      "abbr": 1
     },
     {
       "name": "American Samoa",
-      "abbr": "AS"
+      "abbr": 1
     },
     {
       "name": "Arizona",
-      "abbr": "AZ"
+      "abbr": 2
     },
     {
       "name": "Arkansas",
-      "abbr": "AR"
+      "abbr": 3
     },
     {
       "name": "California",
-      "abbr": "CA"
+      "abbr": 4
     },
     {
       "name": "Colorado",
-      "abbr": "CO"
+      "abbr": 6
     },
     {
       "name": "Connecticut",
-      "abbr": "CT"
+      "abbr": 7
     }
   ]
 

@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <title>Dgigurda</title>
     <script src="prod/bundle.js"></script>
+
 </head>
 <body ng-controller="mainCntrl as vm">
+<div class="container">
     <h1>{{vm.name}}</h1>
-    <form ng-submit="vm.onSubmit()" name="vm.form" novalidate>
-        <formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">
-            <button type="submit" ng-click="vm.onSubmit()" class="btn btn-primary submit-button">Submit</button>
-        </formly-form>
-    </form>
+
+
+    <!--<div class="row">-->
+        <!--<form ng-submit="vm.onSubmit()" name="vm.form" novalidate>-->
+            <!--<formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">-->
+            <!--</formly-form>-->
+        <!--</form>-->
+    <!--</div>-->
+    <div class="row formly-field">
+
+        <div id="grid1" ui-grid="vm.gridOpts" class="grid" ui-grid-auto-resize ui-grid-cellnav ui-grid-edit></div>
+    </div>
+    <div class="row">
+        <div opts="vm.gridOpts"class="dropzone" ></div>
+    </div>
+</div>
+
 </body>
 </html>

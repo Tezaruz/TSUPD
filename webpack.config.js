@@ -17,6 +17,7 @@ module.exports={
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
             { test: /\.css$/,  loader: "style-loader!css-loader"},
+            { test: /\.html$/,  loader: "html-loader"},
 
             //[bootstrap-webpack](https://github.com/bline/bootstrap-webpack)
             { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
@@ -32,5 +33,13 @@ module.exports={
             $: "jquery",
             jQuery: "jquery"
         })
+    ],
+    node: {
+        fs: 'empty'
+    },
+    externals: [
+        {
+            './cptable': 'var cptable'
+        }
     ]
 };

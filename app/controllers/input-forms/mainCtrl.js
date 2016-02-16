@@ -4,7 +4,7 @@
 
 module.exports = function (ngModule) {
     require('bootstrap-webpack');
-    require('./app.css');
+    require('./forms.css');
     require('angular-ui-grid/ui-grid.js');
     require('angular-ui-grid/ui-grid.css');
     let uibs = require('angular-ui-bootstrap');
@@ -16,18 +16,29 @@ module.exports = function (ngModule) {
             //require('angular-ui-grid'),
             'ui.grid',
             'ui.grid.autoResize',
-            'ui.grid.pagination',
-            'ui.grid.selection',
+            //'ui.grid.pagination',
+            //'ui.grid.selection',
             'ui.grid.edit',
+            'ui.grid.cellNav',
             'ui.grid.rowEdit',
+            //'ui.grid.treeView',
+            'ui.grid.exporter',
             'formService'
         ]);
     inputFormsCntrls.run(function (formlyConfig) {
         formlyConfig.setType({
             name: 'ui-grid',
-            template: '<div ui-grid="{ data: model[options.key], columnDefs: to.columnDefs, onRegisterApi: to.onRegisterApi}" ui-grid-auto-resize ui-grid-pagination ui-grid-selection ui-grid-edit ui-grid-row-edit ></div>',
+            template: require('./ui-grid-template.html'),
             wrapper: ['bootstrapLabel', 'bootstrapHasError']
-        });
+        }/*,{
+            name: 'dropzone',
+            template: '<div ui-grid="{ data: model[options.key],
+            columnDefs: to.columnDefs, onRegisterApi: to.onRegisterApi}"
+             ui-grid-auto-resize ui-grid-cellnav ui-grid-edit ui-grid-row-edit
+              ui-grid-tree-view ui-grid-exporter></div>',
+            wrapper: ['bootstrapLabel', 'bootstrapHasError']
+
+        }*/);
     });
     let mainCntrlFun = function (Form) {
         let vm = this;
@@ -56,7 +67,10 @@ module.exports = function (ngModule) {
             }
         };
 
-        //TODO try json fields list
+        //fileloader
+        vm.gridOpts = {};
+
+
 
     };
     inputFormsCntrls.controller('mainCntrl', mainCntrlFun);
