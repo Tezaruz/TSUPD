@@ -19,6 +19,13 @@ module.exports={
             { test: /\.css$/,  loader: "style-loader!css-loader"},
             { test: /\.html$/,  loader: "html-loader"},
 
+            //vega
+            {test: require.resolve('vega'), loaders: [
+                    'transform?vega/scripts/strip-schema.js',
+                    'transform?browserify-versionify'
+                ]
+            },
+
             //[bootstrap-webpack](https://github.com/bline/bootstrap-webpack)
             { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
             { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&mimetype=application/font-woff" },

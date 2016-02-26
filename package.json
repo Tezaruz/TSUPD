@@ -26,6 +26,10 @@
     "angular-formly-templates-bootstrap": "^6.2.0",
     "api-check": "^7.5.5",
     "bootstrap-webpack": "0.0.5",
-    "extract-text-webpack-plugin": "^1.0.1"
+    "extract-text-webpack-plugin": "^1.0.1",
+    "browserify-versionify": "^1.0.6",
+    "jstransform": "^11.0.2",
+    "through": "^2.3.8",
+    "transform-loader": "^0.2.3"
   }
 }
