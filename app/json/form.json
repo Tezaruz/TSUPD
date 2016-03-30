@@ -1,6 +1,15 @@
 {
-  "formName": "formName",
+  "formName": "Имя формы",
   "fields":[
+    {
+      "key": "password", //идентификатор поля
+     "type": "input", //
+      "templateOptions": {
+        "type": "password",
+        "label": "Пароль",
+        "placeholder": "Введите свой пароль"
+      }
+    },
     {
       "key": "myList",
       "type": "ui-grid",
@@ -8,12 +17,12 @@
         "label": "I. Заголовок",
         "columnDefs": [
           {
-            "name": "State",
+            "name": "Название",
             "field": "name"
           },
           {
-            "name": "Abbr",
-            "field": "abbr",
+            "name": "Номер",
+            "field": "num",
             "type": "number"
           }
         ],
@@ -24,36 +33,16 @@
   ],
   "myList": [
     {
-      "name": "Alabama",
-      "abbr": 1
+      "name": "Первый",
+      "num": 1
     },
     {
-      "name": "Alaska",
-      "abbr": 1
+      "name": "Второй",
+      "num": 2
     },
     {
-      "name": "American Samoa",
-      "abbr": 1
-    },
-    {
-      "name": "Arizona",
-      "abbr": 2
-    },
-    {
-      "name": "Arkansas",
-      "abbr": 3
-    },
-    {
-      "name": "California",
-      "abbr": 4
-    },
-    {
-      "name": "Colorado",
-      "abbr": 6
-    },
-    {
-      "name": "Connecticut",
-      "abbr": 7
+      "name": "Третий",
+      "num": 3
     }
   ]
 

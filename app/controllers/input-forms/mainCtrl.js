@@ -74,5 +74,5 @@ module.exports = function (ngModule) {
 
     };
     inputFormsCntrls.controller('mainCntrl', mainCntrlFun);
-
+   //Нет в жизни халявы. Никто не придёт, ничего не даст, и за вас не сделает, особенно, когда вы слабый и у вас ничего нет.
 }

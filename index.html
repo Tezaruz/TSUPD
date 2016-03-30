@@ -11,12 +11,12 @@
     <h1>{{vm.name}}</h1>
 
 
-    <!--<div class="row">-->
-        <!--<form ng-submit="vm.onSubmit()" name="vm.form" novalidate>-->
-            <!--<formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">-->
-            <!--</formly-form>-->
-        <!--</form>-->
-    <!--</div>-->
+    <div class="row">
+        <form ng-submit="vm.onSubmit()" name="vm.form" novalidate>
+            <formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">
+            </formly-form>
+        </form>
+    </div>
     <div class="row formly-field">
 
         <div id="grid1" ui-grid="vm.gridOpts" class="grid" ui-grid-auto-resize ui-grid-cellnav ui-grid-edit></div>
